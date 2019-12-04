@@ -1,0 +1,287 @@
+$primary: rgb(62, 110, 199);
+$deepblue: #154275;
+$border: #768BA5;
+
+
+@import "node_modules/bootstrap/scss/bootstrap";
+
+@keyframes slideInFromRight {
+    0% {    
+        transform: translateX(100%);
+    }
+    100% {
+    transform: translateX(0);
+    }
+}
+
+@keyframes makeOneCol {
+    0%{
+        transform: translate(100%, 0%);
+    }
+    100%{
+        transform: translate(0%, 0%);
+    }
+}
+
+@keyframes makeOneRow {
+    0%{
+        transform: translate(-100%, 0%);
+    }
+    100%{
+        transform: translate(0%, 0%);
+    }
+}
+
+
+@keyframes slideInFromLeft {
+    0% {    
+        transform: translateX(-100%);
+    }
+    100% {
+    transform: translateX(0);
+    }
+}
+
+
+@keyframes opacityFromLeft {
+    0% {
+        opacity: 0.3;
+    }
+    25%{
+        opacity: 0.35;
+    }
+    50%{
+        opacity: 0.4;        
+    }
+    75%{
+        opacity: 0.6;
+    }
+    100%{
+        opacity: 0.9;        
+    }
+}
+
+@keyframes opacityFromRight {
+    0% {
+        opacity: 0.3;
+    }
+    25%{
+        opacity: 0.35;
+    }
+    50%{
+        opacity: 0.4;        
+    }
+    75%{
+        opacity: 0.6;
+    }
+    100%{
+        opacity: 0.9;        
+    }
+}
+
+@mixin btnColor {
+    color: $white;
+                background-color: $deepblue;
+                border: 1px solid $border;
+                font-size: 1em;
+                margin-top: 10px;
+                margin-right: 10px;
+                border-radius: 4px;
+}
+@mixin btnColorHover {
+    color: $deepblue;
+    background-color: $white;
+    border: 1px solid $border;
+    font-size: 1em;
+    border-radius: 4px;
+}
+.tableHeader{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    display: flex;
+    .viewBtn{
+        height: 2.5em;
+        &:hover{
+        
+        @include btnColorHover();
+        }
+        @include btnColor();
+    }
+    h3 {
+        color: $primary;
+        margin-top: 10px;
+    }
+}
+
+#affectAll{
+    animation: 1s ease-out slideInFromLeft, 1s linear opacityFromLeft;
+    display: flex;
+    margin-top: 30px;
+    margin-left: 30px;
+    
+    .allBtn{
+        height: 2.5em;
+        
+        &:hover{
+        
+        @include btnColorHover();
+        }
+        @include btnColor();
+    }
+}
+.skillsetDiv{
+    max-width: 80%;
+}
+#personSkillset{
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+
+    
+    
+    #personSkillsetRow1{
+        width: 60%;
+        margin-left: 150px;
+        display: flex;
+        flex-direction: column;   
+        animation: 1s ease-out slideInFromLeft, 1s linear opacityFromLeft; 
+        tr{
+            td{
+            width: 5%;
+            }
+        }
+    }
+    #personSkillsetRow2{
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        animation: 1s ease-out makeOneRow, 1s linear opacityFromLeft;
+    }
+}
+#header{
+    padding: 0px 0px 20px 20px;
+    background-color: $deepblue;
+    color: $white;
+    display: flex;
+    flex-direction: row;
+}
+#headerText{
+    margin-left: 100px;
+    margin-top: 50px;
+    p{
+        font-size: 1.2em;
+        min-width: 200px;
+    }
+    h4{        
+        min-width: 200px;
+    }
+    #headerInfo{
+        min-width: 200px;
+        margin-top: 50px;
+    }
+}
+
+#sideImage{
+    background-image: linear-gradient( to right, rgb(255, 255, 255)0%, rgba(219, 219, 219, 0.87)25%, rgba(219, 219, 219, 0.89)30%, rgba(255, 255, 255, 0.815)35%, rgb(255, 255, 255)50%), url("/img/programming.jpg");
+    position: fixed;
+    right: 0px;
+    background-repeat: no-repeat;
+    top: 0px;
+    left: 50%;
+    height: 10000px;
+    width: 2500px;
+    z-index: -1;
+    animation: 0.8s ease-out slideInFromLeft, 0.8s linear opacityFromLeft;
+}
+#projects{
+    margin-top: 150px; 
+    margin-left: 10%;
+    margin-right: 40%;
+    .project{
+        margin-bottom: 50px;
+        min-width: 300px;
+        max-width: 1200px;
+        .projImg{
+            height: 250px;
+            max-width: 600px;
+}
+    }
+}
+.profileImage{
+    width: 230px;
+    height: 180px;
+    border: 3px solid $border;
+    margin-top: 50px;
+    transform: rotate(90deg);
+    margin-left: 150px;
+}
+
+#language{
+    margin-left: 10px;
+    h6{
+        margin-top: 10px;
+        color: white;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    body{
+        font-size: 0.8em;
+        h1{
+            font-size: 2em;
+        }
+        h5{
+            font-size: 1.5em;
+        }
+    }
+    #sideImage{
+        animation: 1s ease-out 0s 1 slideInFromRight, 0.5s linear 1 opacityFromRight;
+        left: 0px;
+        opacity: 0.4;
+    }
+    .profileImage{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #header{
+        flex-direction: column;
+        min-width: 200px;
+        padding-left: 5px;
+    }
+    #headerText{
+        min-width: 200px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    #email{
+        margin-top: 30px;
+        
+    }
+    #personSkillset{
+        display: unset;
+        font-size: 1em;
+        #personSkillsetRow1{
+            margin-left: 100px;
+            font-size: 1em;
+        }
+        #personSkillsetRow2{
+            margin-left: 100px;
+            font-size: 1em;
+            animation: 1s ease-out makeOneCol, 1s linear opacityFromRight;
+        }
+    }
+    .skillsetDiv{
+        margin-right: 10px;
+        width: 80%;
+    }
+    #projects{
+        margin-left: 10px;
+    }
+    table{
+        margin-left: -80px;
+        
+        margin-right: 30px;
+    }
+    }
+
