@@ -10861,8 +10861,8 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 #sideImage {
-  background-image: -webkit-gradient(linear, left top, right top, from(white), color-stop(25%, rgba(219, 219, 219, 0.87)), color-stop(30%, rgba(219, 219, 219, 0.89)), color-stop(35%, rgba(255, 255, 255, 0.815)), color-stop(50%, white)), url("img/programming.jpg");
-  background-image: linear-gradient(to right, white 0%, rgba(219, 219, 219, 0.87) 25%, rgba(219, 219, 219, 0.89) 30%, rgba(255, 255, 255, 0.815) 35%, white 50%), url("img/programming.jpg");
+  background-image: -webkit-gradient(linear, left top, right top, from(white), color-stop(25%, rgba(219, 219, 219, 0.87)), color-stop(30%, rgba(219, 219, 219, 0.89)), color-stop(35%, rgba(255, 255, 255, 0.815)), color-stop(50%, white)), url("/img/programming.jpg");
+  background-image: linear-gradient(to right, white 0%, rgba(219, 219, 219, 0.87) 25%, rgba(219, 219, 219, 0.89) 30%, rgba(255, 255, 255, 0.815) 35%, white 50%), url("/img/programming.jpg");
   position: fixed;
   right: 0px;
   background-repeat: no-repeat;
