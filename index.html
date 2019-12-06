@@ -7,18 +7,19 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>CV/Portfolio</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="js/jquery-3.4.1.min.js"></script>
-    <script Content-Type="text/javascript" src="js/main.js"></script>
+    <script src="project/js/jquery-3.4.1.min.js"></script>
+    <script Content-Type="text/javascript" src="project/js/main.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
         integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
         crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/sass.css">
+    <link rel="stylesheet" href="project/css/sass.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
 </head>
 
 <body>
     <!-- Header of page with picture and some info -->
     <div id="header">
-        <img class="profileImage" src="img/20190315_232317.jpg" alt="">
+        <img class="profileImage" src="project/img/20190315_232317.jpg" alt="">
         <div id="headerText">
             <h1>Robin Neuman</h1>
             <p class="description" lang="en">Up-and-coming fullstack developer aiming to set his mark on the industry.
@@ -36,23 +37,29 @@
     <!-- Navbar of page with link to github, linkedin and also scroll button down to projects -->
     <nav class="navbar navbar-dark bg-primary navbar-expand-lg">
         <div class="container-fluid">
-            <div class="nav navbar-nav">
-                <a class="nav-item nav-link border-right bg-primary projectsNav" href="#!" lang="en">Projects</a>
-                <a class="nav-item nav-link border-right bg-primary projectsNav d-none" href="#!" lang="sv">Projekt</a>
-                <a class="nav-item nav-link border-right bg-primary" href="https://github.com/Robin-Neuman"
-                    lang="en">Link to Github</a>
-                <a class="nav-item nav-link border-right bg-primary d-none" href="https://github.com/Robin-Neuman"
-                    lang="sv">Länk till Github</a>
-                <a class="nav-item nav-link border-right bg-primary"
-                    href="https://www.linkedin.com/in/robin-neuman-226511a5/" lang="en">Link to Linkedin</a>
-                <a class="nav-item nav-link border-right bg-primary d-none"
-                    href="https://www.linkedin.com/in/robin-neuman-226511a5/" lang="sv">Länk till Linkedin</a>
+            <div class="nav navbar-nav" id="navigationNav">
+                <a class="nav-item nav-link mr-4 border bg-primary projectsNav" href="#!"
+                    lang="en">Projects</a>
+                <a class="nav-item nav-link mr-4 border bg-primary projectsNav d-none" href="#!"
+                    lang="sv">Projekt</a>
+                </div>
+                <div class="nav navbar-nav" id="linksNav">
+                    <a class="nav-item nav-link border bg-primary" href="https://github.com/Robin-Neuman"
+                        lang="en"><i class="fab fa-github mr-1"></i>Github</a>
+                    <a class="nav-item nav-link border bg-primary d-none" href="https://github.com/Robin-Neuman"
+                        lang="sv"><i class="fab fa-github mr-1"></i>Github</a>
+                    <a class="nav-item nav-link border bg-primary"
+                        href="https://www.linkedin.com/in/robin-neuman-226511a5/" lang="en"><i
+                            class="fab fa-linkedin mr-1"></i>Linkedin</a>
+                    <a class="nav-item nav-link border bg-primary d-none"
+                        href="https://www.linkedin.com/in/robin-neuman-226511a5/" lang="sv"><i
+                            class="fab fa-linkedin mr-1"></i>Linkedin</a>
+                
             </div>
             <!-- Buttons for choosing language -->
             <div id="language" class="nav navbar-nav navbar-right">
-                <h6>Language/språk:</h6>
-                <a class="nav-item nav-link border-right bg-primary" href="#!" id="svenska">Svenska</a>
-                <a class="nav-item nav-link border-right bg-primary" href="#!" id="english">English</a>
+                <a class="nav-item nav-link ml-2 border bg-primary" href="#!" id="svenska">Svenska</a>
+                <a class="nav-item nav-link border bg-primary" href="#!" id="english">English</a>
             </div>
         </div>
     </nav>
@@ -344,11 +351,7 @@
                                 one of my currently biggest interrests.
 
                             </p>
-                            <p lang="sv" class="d-none">Jag anser mig själv att vara en trevlig kille som alltid försöker 
-                                lysa upp närvaron när folk känner sig nere. Mitt jobb är något jag tar väldigt seriöst och letar alltid 
-                                efter områden jag kan förbättra mig i.
-                                På fritiden gillar jag att spela PC spel och gå på prommenader med min hund genom skogen, samt spenderar
-                                jag mycket av min fritid med programmering eftersom det är ett av mina större intressen.</p>
+                            <p lang="sv" class="d-none">Javascript</p>
                         </td>
                     </tr>
                 </table>
@@ -419,7 +422,7 @@
             <div class="card border-primary">
                 <div class="row no-gutters">
                     <div class="col-md-4 rounded border border-primary">
-                        <img src="img/crm.PNG" class="card-img projImg" alt="project image">
+                        <img src="project/img/crm.PNG" class="card-img projImg" alt="project image">
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
@@ -451,7 +454,7 @@
             <div class="card border-primary">
                 <div class="row no-gutters">
                     <div class="col-md-4 rounded border border-primary">
-                        <img src="img/quiz.PNG" class="card-img projImg" alt="project image">
+                        <img src="project/img/quiz.PNG" class="card-img projImg" alt="project image">
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
@@ -480,7 +483,7 @@
             <div class="card border-primary">
                 <div class="row no-gutters">
                     <div class="col-md-4 rounded border border-primary">
-                        <img src="img/sandraWebsite.PNG" class="card-img projImg" alt="project image">
+                        <img src="project/img/sandraWebsite.PNG" class="card-img projImg" alt="project image">
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
