@@ -10861,18 +10861,14 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 #sideImage {
-  background-image: -webkit-gradient(linear, left top, right top, from(white), color-stop(25%, rgba(219, 219, 219, 0.87)), color-stop(30%, rgba(219, 219, 219, 0.89)), color-stop(35%, rgba(255, 255, 255, 0.815)), color-stop(50%, white)), url("./programming.jpg");
-  background-image: linear-gradient(to right, white 0%, rgba(219, 219, 219, 0.87) 25%, rgba(219, 219, 219, 0.89) 30%, rgba(255, 255, 255, 0.815) 35%, white 50%), url("./programming.jpg");
   position: fixed;
   right: 0px;
   background-repeat: no-repeat;
   top: 0px;
-  left: 50%;
-  height: 10000px;
-  width: 2500px;
+  height: 300%;
+  width: 100%;
   z-index: -1;
-  -webkit-animation: 0.8s ease-out slideInFromLeft, 0.8s linear opacityFromLeft;
-          animation: 0.8s ease-out slideInFromLeft, 0.8s linear opacityFromLeft;
+  opacity: 0.08;
 }
 
 #projects {
