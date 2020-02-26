@@ -186,10 +186,13 @@ $border: #768BA5;
     right: 0px;
     background-repeat: no-repeat;
     top: 0px;
-    height: 300%;
-    width: 100%;
+    left: 0px;
+    height: 3000px;
+    width: 2000px;
     z-index: -1;
     opacity: 0.08;
+    min-width: 100%;
+    min-height: 200%;
 }
 #projects{
     margin-top: 150px; 
@@ -231,9 +234,8 @@ $border: #768BA5;
         }
     }
     #sideImage{
-        animation: 1s ease-out 0s 1 slideInFromRight, 0.5s linear 1 opacityFromRight;
-        left: 0px;
-        opacity: 0.4;
+        width: 1000px;
+        height: 2000px;
     }
     .profileImage{
         margin-left: auto;
