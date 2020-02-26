@@ -100,14 +100,18 @@ $border: #768BA5;
     margin-bottom: 20px;
     display: flex;
     .viewBtn{
-        height: 2.5em;
+        height: 2em;
+        width: 3em;
         &:hover{
         
         @include btnColorHover();
         }
         @include btnColor();
     }
-    h3 {
+    .headerBtn{
+        font-size: 23px;
+    }
+    h3{
         color: $primary;
         margin-top: 10px;
     }
@@ -152,7 +156,7 @@ $border: #768BA5;
         }
     }
     #personSkillsetRow2{
-        width: 40%;
+        width: 60%;
         display: flex;
         flex-direction: column;
         animation: 1s ease-out makeOneRow, 1s linear opacityFromLeft;

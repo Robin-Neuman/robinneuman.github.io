@@ -58,8 +58,8 @@ $(document).ready(function(e){
             
             if(target.attr("class") != "d-none"){
                 target.removeClass("d-none");
-                $(btnTargetEn).text("hide");           
-                $(btnTargetSv).text("dölj");           
+                $(btnTargetEn).text("Hide");           
+                $(btnTargetSv).text("Dölj");           
                 
             }
     });
@@ -73,8 +73,8 @@ $(document).ready(function(e){
         
         if(target.attr("class") == "d-none"){
             target.addClass("d-none");
-            $(btnTargetEn).text("view");           
-            $(btnTargetSv).text("visa");           
+            $(btnTargetEn).text("View");           
+            $(btnTargetSv).text("Visa");           
             
         }
     });
