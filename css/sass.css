@@ -10861,8 +10861,8 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 #sideImage {
-  background-image: -webkit-gradient(linear, left top, right top, from(white), color-stop(25%, rgba(219, 219, 219, 0.87)), color-stop(30%, rgba(219, 219, 219, 0.89)), color-stop(35%, rgba(255, 255, 255, 0.815)), color-stop(50%, white)), url("img/programming.jpg");
-  background-image: linear-gradient(to right, white 0%, rgba(219, 219, 219, 0.87) 25%, rgba(219, 219, 219, 0.89) 30%, rgba(255, 255, 255, 0.815) 35%, white 50%), url("img/programming.jpg");
+  background-image: -webkit-gradient(linear, left top, right top, from(white), color-stop(25%, rgba(219, 219, 219, 0.87)), color-stop(30%, rgba(219, 219, 219, 0.89)), color-stop(35%, rgba(255, 255, 255, 0.815)), color-stop(50%, white)), url("/img/programming.jpg");
+  background-image: linear-gradient(to right, white 0%, rgba(219, 219, 219, 0.87) 25%, rgba(219, 219, 219, 0.89) 30%, rgba(255, 255, 255, 0.815) 35%, white 50%), url("/img/programming.jpg");
   position: fixed;
   right: 0px;
   background-repeat: no-repeat;
@@ -10879,22 +10879,21 @@ a.text-dark:hover, a.text-dark:focus {
   margin-top: 150px;
   margin-left: 10%;
   margin-right: 40%;
+  min-width: 800px;
 }
 
 #projects .project {
   margin-bottom: 50px;
-  min-width: 300px;
   max-width: 1200px;
 }
 
 #projects .project .projImg {
   height: 250px;
-  max-width: 600px;
 }
 
 .profileImage {
-  width: 230px;
-  height: 180px;
+  width: 200px;
+  height: 270px;
   border: 3px solid #768BA5;
   margin-top: 50px;
   margin-left: 150px;
@@ -10950,6 +10949,9 @@ a.text-dark:hover, a.text-dark:focus {
     display: unset;
     font-size: 1em;
   }
+  #personSkillset h5, #personSkillset p {
+    margin-left: 100px;
+  }
   #personSkillset #personSkillsetRow1 {
     margin-left: 100px;
     font-size: 1em;
@@ -10964,12 +10966,28 @@ a.text-dark:hover, a.text-dark:focus {
     margin-right: 10px;
     width: 80%;
   }
-  #projects {
-    margin-left: 10px;
-  }
   table {
     margin-left: -80px;
     margin-right: 30px;
+  }
+  #projects {
+    margin-top: 150px;
+    margin-left: 10%;
+    margin-right: 40%;
+    max-height: 200px;
+    min-width: 600px;
+  }
+  #projects .project .projImg {
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #projects {
+    margin-top: 150px;
+    margin-left: 10%;
+    margin-right: 40%;
+    min-width: 200px;
   }
 }
 /*# sourceMappingURL=sass.css.map */
