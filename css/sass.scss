@@ -102,9 +102,11 @@ $border: #768BA5;
     .viewBtn{
         height: 2em;
         width: 3em;
-        &:hover{
-        
+        &:hover{        
         @include btnColorHover();
+        }
+        &:active{        
+        @include btnColorActive();
         }
         @include btnColor();
     }
