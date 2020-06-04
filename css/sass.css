@@ -10879,7 +10879,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 #headerText #headerInfo {
   position: absolute;
-  bottom: 0;
+  bottom: 30px;
 }
 
 #sideImage {
@@ -10913,10 +10913,11 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .profileImage {
-  width: 250px;
+  width: 245px;
   height: 300px;
   border: 3px solid #768BA5;
   margin-top: 50px;
+  margin-bottom: 30px;
   margin-left: 150px;
 }
 

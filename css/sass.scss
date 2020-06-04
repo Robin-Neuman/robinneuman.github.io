@@ -189,7 +189,7 @@ $undertext: rgb(204, 204, 204);
     }
     #headerInfo{
         position: absolute;
-        bottom: 0;
+        bottom: 30px;
     }
 }
 
@@ -220,10 +220,11 @@ $undertext: rgb(204, 204, 204);
     }
 }
 .profileImage{
-    width: 250px;
+    width: 245px;
     height: 300px;
     border: 3px solid $border;
     margin-top: 50px;
+    margin-bottom: 30px;
     margin-left: 150px;
 }
 
