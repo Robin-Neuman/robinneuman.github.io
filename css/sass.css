@@ -10561,166 +10561,6 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 
-@-webkit-keyframes slideInFromRight {
-  0% {
-    -webkit-transform: translateX(100%);
-            transform: translateX(100%);
-  }
-  100% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-}
-
-@keyframes slideInFromRight {
-  0% {
-    -webkit-transform: translateX(100%);
-            transform: translateX(100%);
-  }
-  100% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-}
-
-@-webkit-keyframes makeOneCol {
-  0% {
-    -webkit-transform: translate(100%, 0%);
-            transform: translate(100%, 0%);
-  }
-  100% {
-    -webkit-transform: translate(0%, 0%);
-            transform: translate(0%, 0%);
-  }
-}
-
-@keyframes makeOneCol {
-  0% {
-    -webkit-transform: translate(100%, 0%);
-            transform: translate(100%, 0%);
-  }
-  100% {
-    -webkit-transform: translate(0%, 0%);
-            transform: translate(0%, 0%);
-  }
-}
-
-@-webkit-keyframes makeOneRow {
-  0% {
-    -webkit-transform: translate(-100%, 0%);
-            transform: translate(-100%, 0%);
-  }
-  100% {
-    -webkit-transform: translate(0%, 0%);
-            transform: translate(0%, 0%);
-  }
-}
-
-@keyframes makeOneRow {
-  0% {
-    -webkit-transform: translate(-100%, 0%);
-            transform: translate(-100%, 0%);
-  }
-  100% {
-    -webkit-transform: translate(0%, 0%);
-            transform: translate(0%, 0%);
-  }
-}
-
-@-webkit-keyframes slideInFromLeft {
-  0% {
-    -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
-  }
-  100% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-}
-
-@keyframes slideInFromLeft {
-  0% {
-    -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
-  }
-  100% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-}
-
-@-webkit-keyframes opacityFromLeft {
-  0% {
-    opacity: 0.3;
-  }
-  25% {
-    opacity: 0.35;
-  }
-  50% {
-    opacity: 0.4;
-  }
-  75% {
-    opacity: 0.6;
-  }
-  100% {
-    opacity: 0.9;
-  }
-}
-
-@keyframes opacityFromLeft {
-  0% {
-    opacity: 0.3;
-  }
-  25% {
-    opacity: 0.35;
-  }
-  50% {
-    opacity: 0.4;
-  }
-  75% {
-    opacity: 0.6;
-  }
-  100% {
-    opacity: 0.9;
-  }
-}
-
-@-webkit-keyframes opacityFromRight {
-  0% {
-    opacity: 0.3;
-  }
-  25% {
-    opacity: 0.35;
-  }
-  50% {
-    opacity: 0.4;
-  }
-  75% {
-    opacity: 0.6;
-  }
-  100% {
-    opacity: 0.9;
-  }
-}
-
-@keyframes opacityFromRight {
-  0% {
-    opacity: 0.3;
-  }
-  25% {
-    opacity: 0.35;
-  }
-  50% {
-    opacity: 0.4;
-  }
-  75% {
-    opacity: 0.6;
-  }
-  100% {
-    opacity: 0.9;
-  }
-}
-
 .tableHeader {
   margin-top: 50px;
   margin-bottom: 20px;
@@ -10769,8 +10609,6 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 #affectAll {
-  -webkit-animation: 1s ease-out slideInFromLeft, 1s linear opacityFromLeft;
-          animation: 1s ease-out slideInFromLeft, 1s linear opacityFromLeft;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -10810,7 +10648,7 @@ a.text-dark:hover, a.text-dark:focus {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  max-width: 70%;
+  max-width: 100%;
 }
 
 #personSkillset #personSkillsetRow1 {
@@ -10823,8 +10661,6 @@ a.text-dark:hover, a.text-dark:focus {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-animation: 1s ease-out slideInFromLeft, 1s linear opacityFromLeft;
-          animation: 1s ease-out slideInFromLeft, 1s linear opacityFromLeft;
 }
 
 #personSkillset #personSkillsetRow1 tr td {
@@ -10840,8 +10676,6 @@ a.text-dark:hover, a.text-dark:focus {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-animation: 1s ease-out makeOneRow, 1s linear opacityFromLeft;
-          animation: 1s ease-out makeOneRow, 1s linear opacityFromLeft;
 }
 
 #header {
@@ -10858,7 +10692,6 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 #headerText {
-  position: relative;
   margin-left: 100px;
   margin-top: 50px;
 }
@@ -10878,8 +10711,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 #headerText #headerInfo {
-  position: absolute;
-  bottom: 30px;
+  margin-top: 100px;
 }
 
 #sideImage {
@@ -10899,7 +10731,7 @@ a.text-dark:hover, a.text-dark:focus {
 #projects {
   margin-top: 150px;
   margin-left: 100px;
-  margin-right: 40%;
+  margin-right: 100px;
   min-width: 800px;
 }
 
@@ -10969,7 +10801,7 @@ a.text-dark:hover, a.text-dark:focus {
     display: unset;
     font-size: 1em;
   }
-  #personSkillset h5, #personSkillset p {
+  #personSkillset h5, #personSkillset p, #personSkillset h3 {
     margin-left: 100px;
   }
   #personSkillset #personSkillsetRow1 {
@@ -10979,8 +10811,6 @@ a.text-dark:hover, a.text-dark:focus {
   #personSkillset #personSkillsetRow2 {
     margin-left: 100px;
     font-size: 1em;
-    -webkit-animation: 1s ease-out makeOneCol, 1s linear opacityFromRight;
-            animation: 1s ease-out makeOneCol, 1s linear opacityFromRight;
   }
   .skillsetDiv {
     margin-right: 10px;
@@ -10992,8 +10822,8 @@ a.text-dark:hover, a.text-dark:focus {
   }
   #projects {
     margin-top: 150px;
-    margin-left: 10%;
-    margin-right: 40%;
+    margin-left: 100px;
+    margin-right: 100px;
     max-height: 200px;
     min-width: 600px;
   }
@@ -11005,8 +10835,8 @@ a.text-dark:hover, a.text-dark:focus {
 @media screen and (max-width: 768px) {
   #projects {
     margin-top: 150px;
-    margin-left: 10%;
-    margin-right: 40%;
+    margin-left: 100px;
+    margin-right: 100px;
     min-width: 200px;
   }
 }
