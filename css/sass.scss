@@ -1,6 +1,7 @@
 $primary: rgb(62, 110, 199);
 $deepblue: #154275;
 $border: #768BA5;
+$undertext: rgb(204, 204, 204);
 
 
 @import "node_modules/bootstrap/scss/bootstrap";
@@ -119,7 +120,6 @@ $border: #768BA5;
         margin-top: 10px;
     }
 }
-
 #affectAll{
     animation: 1s ease-out slideInFromLeft, 1s linear opacityFromLeft;
     display: flex;
@@ -148,7 +148,7 @@ $border: #768BA5;
     
     #personSkillsetRow1{
         width: 60%;
-        margin-left: 150px;
+        margin-left: 100px;
         display: flex;
         flex-direction: column;   
         animation: 1s ease-out slideInFromLeft, 1s linear opacityFromLeft; 
@@ -173,18 +173,23 @@ $border: #768BA5;
     flex-direction: row;
 }
 #headerText{
+    position: relative;
     margin-left: 100px;
     margin-top: 50px;
     p{
         font-size: 1.2em;
         min-width: 200px;
+        color: $undertext;
     }
     h4{        
         min-width: 200px;
     }
+    h5{
+        color: $undertext;
+    }
     #headerInfo{
-        min-width: 200px;
-        margin-top: 50px;
+        position: absolute;
+        bottom: 0;
     }
 }
 
@@ -203,7 +208,7 @@ $border: #768BA5;
 }
 #projects{
     margin-top: 150px; 
-    margin-left: 10%;
+    margin-left: 100px;
     margin-right: 40%;
     min-width: 800px;
     .project{
@@ -215,7 +220,7 @@ $border: #768BA5;
     }
 }
 .profileImage{
-    width: 200px;
+    width: 250px;
     height: 300px;
     border: 3px solid $border;
     margin-top: 50px;
